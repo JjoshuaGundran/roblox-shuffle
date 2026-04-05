@@ -5,19 +5,22 @@ interface GameCardsDisplayProps {
 }
 
 export const GameCardsDisplay = (props: GameCardsDisplayProps) => {
+  const DisplayHeader = () => {
+    return (
+      <>
+        <p className="h-fit">Display 8 Random Games</p>
+        <button className="btn cursor-pointer px-2 py-1 rounded-md">Refresh</button>
+      </>
+    )
+  }
+  
   return (
     <>
       <Card
         containerCss="w-full md:w-180"
-        header={<>
-          <p>Display 8 Random Games</p>
-          <button className="cursor-pointer">Refresh</button>
-        </>}
-        childContent={<>
-          <GameCard title="hello" description="again" />
-        </>}
-      >
-      </Card>
+        header={DisplayHeader()}
+        childContent={<GameCard title="hello" description="again" />}
+      />
     </>
   )
 }

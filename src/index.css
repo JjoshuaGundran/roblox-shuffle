@@ -19,7 +19,9 @@
     --rustic-five: #eb5e28;
 }
 
-html, body, #root {
+html,
+body,
+#root {
     height: 100vh;
 }
 
@@ -37,4 +39,12 @@ html, body, #root {
     background-color: var(--secondary);
     border: 1px solid;
     border-color: var(--rustic-two-shade);
+}
+
+.btn {
+    background-color: var(--rustic-five);
+    text-align: center;
+}
+.btn:hover {
+    background-color: color-mix(in srgb, var(--rustic-five), black 15%);
 }

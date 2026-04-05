@@ -16,7 +16,7 @@ export const Card = (props: CardProps) => {
   return (
     <div className={getContainerCss()}>
       {props.header &&
-        <div className="card-header flex justify-between border-b border-b-gray-500/25 p-3">
+        <div className="card-header flex justify-between items-center border-b border-b-gray-500/25 p-3">
           {props.header}
         </div>
       }
